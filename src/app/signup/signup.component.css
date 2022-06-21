@@ -1,0 +1,99 @@
+html{
+  background-color: wheat;
+}
+
+body{
+  background-color:white;
+  font-family: Rockwell, Georgia, serif;
+  max-width: 1000px;
+  width:90%;
+  margin: 0 auto;
+  box-shadow: 4px 4px 8px rgba(0,0,0.15)
+}
+h1{
+  background-color: tomato;
+  color: white;
+  text-align: center;
+  padding:6px;
+}
+.column{
+  width:50%;
+  float:left;
+  padding:2%;
+  box-sizing:border-box;
+}
+.column{
+  padding:3%;
+}
+/*clear-fix the parent of column because it collapsed!  */
+form:after{
+  content:'';
+  display:block;
+  clear:both;
+}
+
+/* FORM STUFF BEGINS HERE */
+form{
+  font-size:110%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+label{
+  display:block;
+  color:saddlebrown;
+  margin:16px 0 3px;
+}
+fieldset label{
+  display:inline-block;
+  font-size:85%;
+  font-family: Calibri, sans-serif;
+}
+
+
+input[type=email],
+input[type=password],
+select{
+  width:100%;
+  padding:5px;
+  box-sizing:border-box;
+  background-color:cornsilk;
+  border: solid 1px tan;
+  font-family:'Lucida Console', monospace;
+}
+/* BUTTONS */
+input[type=submit]{
+  background-color:forestgreen;
+  color:white;
+  border:none;
+  padding: 6px 20px;
+  font-size:110%;
+  border-radius:10px;
+  font-family: Rockwell, georgia, serif;
+  cursor: pointer;
+}
+
+/* hovers and tabs */
+input[type=password]:hover,
+input[type=email]:hover{
+  background-color:khaki;
+}
+input[type=password]:focus,
+input[type=email]:focus{
+  outline: 2px solid tan;
+}
+input[type=sumbit]:hover,
+input[type=submit]:focus{
+  background-color:limegreen;
+}
+/* responsive bonus round */
+@media screen and (min-width:450px){
+/*  2col  */
+  .column{
+    width:50%;
+    float:left;
+    padding:3%;
+    box-sizing:border-box;
+  }
+}

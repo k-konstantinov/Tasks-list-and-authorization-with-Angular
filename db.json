@@ -1,0 +1,35 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Work Appointment",
+      "day": "May 5th at 2:30pm",
+      "reminder": false
+    },
+    {
+      "text": "Task for job",
+      "day": "5th May 2020",
+      "reminder": true,
+      "id": 3
+    },
+    {
+      "text": "One more task",
+      "day": "5th October at 9:20am",
+      "reminder": true,
+      "id": 4
+    },
+    {
+      "text": "Jogging",
+      "day": "4th, 7th, 9th July 06:00am ",
+      "reminder": true,
+      "id": 5
+    }
+  ],
+  "signupUsers": [
+    {
+      "email": "test@abv.bg",
+      "password": "123",
+      "id": 1
+    }
+  ]
+}

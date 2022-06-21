@@ -1,0 +1,15 @@
+<h1> Registration </h1>
+<div class="container">
+  <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+    <input type="email" name="email" placeholder="Your email" formControlName="email">
+    <br />
+
+    <input type="password" name="password" placeholder="Your password" formControlName="password">
+    <br />
+    <br />
+    <input type="submit" value="Sign Up">
+    <br />
+    <br />
+    <a style="font-size: 15px; color: black; text-decoration: none;" routerLink="/login">Click to LogIn</a>
+  </form>
+</div>
